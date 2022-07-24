@@ -1,0 +1,23 @@
+//接口设计文件
+登录接口
+data{
+    ApiName: fun_login(identity_type,identifier,credential)
+    identity_type: {email,weichat,account,phone};
+    identifier : {emailaddrss/weichatUserName/account/phone_number}
+    credential : {密码/第三方token}
+}
+
+
+//获取图片列表（一直调用,注：释放前边图片，防止内存爆满)
+getimglist(String type) 获取热门作品
+type:
+    ALL :所有类型热门作品
+    相关标签名称
+    
+
+
+//获取推荐列表
+
+getRecommendList(String id,String type) id：用户id | type 获取推荐列表类型 （default:默认 | school study live ... ‘分类’）
+
+
